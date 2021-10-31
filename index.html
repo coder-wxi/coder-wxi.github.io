@@ -235,11 +235,11 @@
     <div class="article-entry" itemprop="articleBody">
       
         <h1 id="伯明翰风景"><a href="#伯明翰风景" class="headerlink" title="伯明翰风景"></a>伯明翰风景</h1><p>沿着运河去学校</p>
-<p><img src="/2021/10/30/birmingham/..%5Cimg%5C1.jpg" alt="alt"></p>
+<p><img src="/2021/10/30/birmingham/1.jpg" alt="alt"></p>
 <p>伯大的钟塔</p>
-<p><img src="/2021/10/30/birmingham/Users\coder\blog\source\img\2.jpg" alt="alt"></p>
+<p><img src="/2021/10/30/birmingham/2.jpg" alt="alt"></p>
 <p>伯大图书馆</p>
-<p><img src="/2021/10/30/birmingham/Users\coder\blog\source\img\3.jpg" alt="alt"></p>
+<p><img src="/2021/10/30/birmingham/3.jpg" alt="alt"></p>
 
       
 
@@ -248,6 +248,17 @@
     <div class="article-info article-info-index">
       
       
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">views</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
       
 
       
@@ -302,11 +313,12 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p><img src="F:\img\1.jpg" alt="alt 壁纸" title="科幻壁纸"></p>
+        <p><img src="/2021/04/24/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/img\1.jpg" alt="alt 壁纸" title="科幻壁纸"></p>
+<p><img src="https://i0.hdslb.com/bfs/article/2225b055c6ee86612988c9bb60c25ccab64ba42a.jpg@942w_1334h_progressive.webp" alt="alt"></p>
 <h1 id="运行时数据区域"><a href="#运行时数据区域" class="headerlink" title="运行时数据区域"></a>运行时数据区域</h1><hr>
 <p>不同的JVM对于内存的划分方式和管理机制存在部分差异。主流的产品<kbd>hotspot</kbd></p>
 <p>操作系统为Jvm虚拟机分配一块内存，当Java程序运行时，Jvm虚拟机所管理的内存区域会分为5部分。如下所示：</p>
-<p><img src="F:\img\2.png" alt="alt 运行时数据区"></p>
+<p><img src="/2021/04/24/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/img\2.png" alt="alt 运行时数据区"></p>
 <p>一个进程对应JVM一次运行，每个进程包含若干线程。每个线程有独立的程序计数器、虚拟机栈、本地栈。一个进程内的所有线程共享堆和方法区。回收问题大部分集中在堆区，小部分在方法区。</p>
 <h2 id="程序计数器"><a href="#程序计数器" class="headerlink" title="程序计数器"></a>程序计数器</h2><p>程序计数器<kbd>PC</kbd>是一块较小的内存空间，是线程私有的。作用类似操作系统的PC，指向下一条指令的地址，即表示当前线程运行到哪一步。字节码解释器就是通过改变程序计数器的值来选取下条要执行的字节码指令。</p>
 <p>每个线程都有一个独立的程序计数器（原因：为了防止线程执行混乱，使线程切换后可以恢复到正确的执行位置。因为任意时刻在处理器一个内核当中，只有一个线程，多线程是靠线程的不断切换，因此每个独立的线程都需要一个计数器，每个计数器之间互不影响，独立存储）  </p>
@@ -520,6 +532,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
             <input type="checkbox" q-on="click:toggleTag(e)" q-attr="checked:showTags">
           </label>
           <ul class="article-tag-list" q-show="showTags">
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">views</a>
+              </li>
             
             <div class="clearfix"></div>
           </ul>
