@@ -11,18 +11,18 @@
   <meta name="description" content="运行时数据区域 不同的JVM对于内存的划分方式和管理机制存在部分差异。主流的产品hotspot 操作系统为Jvm虚拟机分配一块内存，当Java程序运行时，Jvm虚拟机所管理的内存区域会分为5部分。如下所示：  一个进程对应JVM一次运行，每个进程包含若干线程。每个线程有独立的程序计数器、虚拟机栈、本地栈。一个进程内的所有线程共享堆和方法区。回收问题大部分集中在堆区，小部分在方法区。 程序计数器">
 <meta property="og:type" content="article">
 <meta property="og:title" content="运行时数据区域">
-<meta property="og:url" content="http://example.com/2021/04/24/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/index.html">
+<meta property="og:url" content="http://example.com/2021/04/24/JVM/index.html">
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="运行时数据区域 不同的JVM对于内存的划分方式和管理机制存在部分差异。主流的产品hotspot 操作系统为Jvm虚拟机分配一块内存，当Java程序运行时，Jvm虚拟机所管理的内存区域会分为5部分。如下所示：  一个进程对应JVM一次运行，每个进程包含若干线程。每个线程有独立的程序计数器、虚拟机栈、本地栈。一个进程内的所有线程共享堆和方法区。回收问题大部分集中在堆区，小部分在方法区。 程序计数器">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="http://example.com/2021/04/24/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/img/1.jpg">
+<meta property="og:image" content="http://example.com/2021/04/24/JVM/1.jpg">
 <meta property="og:image" content="https://i0.hdslb.com/bfs/article/2225b055c6ee86612988c9bb60c25ccab64ba42a.jpg@942w_1334h_progressive.webp">
-<meta property="og:image" content="http://example.com/2021/04/24/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/img/2.png">
+<meta property="og:image" content="http://example.com/2021/04/24/JVM/2.png">
 <meta property="article:published_time" content="2021-04-24T11:00:40.000Z">
-<meta property="article:modified_time" content="2021-10-30T23:34:18.391Z">
+<meta property="article:modified_time" content="2021-10-31T22:10:58.299Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://example.com/2021/04/24/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/img/1.jpg">
+<meta name="twitter:image" content="http://example.com/2021/04/24/JVM/1.jpg">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -158,7 +158,7 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-我的第一篇博客" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-JVM" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
@@ -170,7 +170,7 @@
   
 
         
-        <a href="/2021/04/24/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/" class="archive-article-date">
+        <a href="/2021/04/24/JVM/" class="archive-article-date">
   	<time datetime="2021-04-24T11:00:40.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-04-24</time>
 </a>
         
@@ -178,12 +178,12 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p><img src="/2021/04/24/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/img\1.jpg" alt="alt 壁纸" title="科幻壁纸"></p>
+        <p><img src="/2021/04/24/JVM/1.jpg" alt="alt 壁纸" title="科幻壁纸"></p>
 <p><img src="https://i0.hdslb.com/bfs/article/2225b055c6ee86612988c9bb60c25ccab64ba42a.jpg@942w_1334h_progressive.webp" alt="alt"></p>
 <h1 id="运行时数据区域"><a href="#运行时数据区域" class="headerlink" title="运行时数据区域"></a>运行时数据区域</h1><hr>
 <p>不同的JVM对于内存的划分方式和管理机制存在部分差异。主流的产品<kbd>hotspot</kbd></p>
 <p>操作系统为Jvm虚拟机分配一块内存，当Java程序运行时，Jvm虚拟机所管理的内存区域会分为5部分。如下所示：</p>
-<p><img src="/2021/04/24/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/img\2.png" alt="alt 运行时数据区"></p>
+<p><img src="/2021/04/24/JVM/2.png" alt="alt 运行时数据区"></p>
 <p>一个进程对应JVM一次运行，每个进程包含若干线程。每个线程有独立的程序计数器、虚拟机栈、本地栈。一个进程内的所有线程共享堆和方法区。回收问题大部分集中在堆区，小部分在方法区。</p>
 <h2 id="程序计数器"><a href="#程序计数器" class="headerlink" title="程序计数器"></a>程序计数器</h2><p>程序计数器<kbd>PC</kbd>是一块较小的内存空间，是线程私有的。作用类似操作系统的PC，指向下一条指令的地址，即表示当前线程运行到哪一步。字节码解释器就是通过改变程序计数器的值来选取下条要执行的字节码指令。</p>
 <p>每个线程都有一个独立的程序计数器（原因：为了防止线程执行混乱，使线程切换后可以恢复到正确的执行位置。因为任意时刻在处理器一个内核当中，只有一个线程，多线程是靠线程的不断切换，因此每个独立的线程都需要一个计数器，每个计数器之间互不影响，独立存储）  </p>
@@ -268,7 +268,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://example.com/2021/04/24/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://example.com/2021/04/24/JVM/" alt="微信分享二维码">
     </div>
 </div>
 
